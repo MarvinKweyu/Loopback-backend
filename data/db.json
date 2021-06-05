@@ -1,0 +1,10 @@
+{
+  "ids": {
+    "Wallets": 2
+  },
+  "models": {
+    "Wallets": {
+      "1": "{\"wallet_name\":\"kitchen ware\",\"expenses\":{\"match\":400},\"total\":0,\"date_created\":\"2021-06-03T10:23:14.218Z\",\"id\":1}"
+    }
+  }
+}
