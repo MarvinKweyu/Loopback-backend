@@ -4,21 +4,27 @@ import {
   Filter,
   FilterExcludingWhere,
   repository,
-  Where
+  Where,
 } from '@loopback/repository';
 import {
-  del, get,
-  getModelSchemaRef, param, patch, post, put, requestBody,
-  response
+  post,
+  param,
+  get,
+  getModelSchemaRef,
+  patch,
+  put,
+  del,
+  requestBody,
+  response,
 } from '@loopback/rest';
 import {Wallets} from '../models';
 import {WalletsRepository} from '../repositories';
 
-export class WalletsController {
+export class WalletController {
   constructor(
     @repository(WalletsRepository)
-    public walletsRepository: WalletsRepository,
-  ) { }
+    public walletsRepository : WalletsRepository,
+  ) {}
 
   @post('/wallets')
   @response(200, {
@@ -88,8 +94,6 @@ export class WalletsController {
   ): Promise<Count> {
     return this.walletsRepository.updateAll(wallets, where);
   }
-
-  // Copied controller
 
   @get('/wallets/{id}')
   @response(200, {

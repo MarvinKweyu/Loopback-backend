@@ -1,2 +1,1 @@
-export * from './wallets.controller';
-export * from './tracker.controller';
+export * from './wallet.controller';
