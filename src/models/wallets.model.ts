@@ -1,4 +1,4 @@
-import {Entity, model, property} from '@loopback/repository';
+import { Entity, model, property } from '@loopback/repository';
 
 @model()
 export class Wallets extends Entity {
@@ -13,7 +13,7 @@ export class Wallets extends Entity {
     type: 'string',
     required: true,
   })
-  wallet_name: string;
+  walletName: string;
 
   @property({
     type: 'object',
@@ -30,8 +30,12 @@ export class Wallets extends Entity {
     type: 'date',
     required: true,
   })
-  date_created: string;
+  createdAt: string;
 
+  @property({
+    type: 'number',
+  })
+  userId?: number;
 
   constructor(data?: Partial<Wallets>) {
     super(data);
