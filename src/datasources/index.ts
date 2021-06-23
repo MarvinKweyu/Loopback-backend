@@ -1,1 +1,1 @@
-export * from './mysql-db.datasource';
+export * from './in-db.datasource';

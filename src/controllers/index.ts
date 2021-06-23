@@ -1,2 +1,2 @@
 export * from './user-wallets.controller';
-export * from './expense.controller';
+export * from './expenses.controller';

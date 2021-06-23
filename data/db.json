@@ -1,10 +1,17 @@
 {
   "ids": {
-    "Wallets": 2
+    "User": 4,
+    "Wallets": 3
   },
   "models": {
+    "User": {
+      "1": "{\"userName\":\"Wangenye\",\"id\":1}",
+      "2": "{\"userName\":\"Neal\",\"id\":2}",
+      "3": "{\"userName\":\"Mwangi\",\"id\":3}"
+    },
     "Wallets": {
-      "1": "{\"wallet_name\":\"kitchen ware\",\"expenses\":{\"match\":400},\"total\":0,\"date_created\":\"2021-06-03T10:23:14.218Z\",\"id\":1}"
+      "1": "{\"walletName\":\"Bank Expenses\",\"expenses\":{\"withdrawan\":800,\"Balance\":900},\"total\":0,\"createdAt\":\"2021-06-23T15:46:05.100Z\",\"userId\":1,\"id\":1}",
+      "2": "{\"walletName\":\"Kitchen Expenses\",\"expenses\":{\"Chopping Board\":300,\"Knife\":900},\"total\":0,\"createdAt\":\"2021-06-23T15:46:05.100Z\",\"userId\":1,\"id\":2}"
     }
   }
 }
